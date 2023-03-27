@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: whitesmoke;
+	color: #333;
+	font: 1rem Poppins, sans-serif;
+}
+
+
+nav {
+	background-color: #6d72f3;
+	color: white;
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+	padding: .5rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav h1 {
+	border-left: 2px solid white;
+	padding-left: .3rem;
+	margin-left: .3rem;
+}
+
+.container {
+	max-width: 450px;
+	margin: 40px auto;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2), 0 0 5px rgba(0,0,0,.2);
+}
+
+.container h3 {
+	background-color: #6d72f3;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+}
+
+.container ul {
+	list-style-type: none;
+	padding: 1rem;
+}
+
+.container ul li {
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2), 0 0 5px rgba(0,0,0,.2);
+	background-image: linear-gradient(to left, transparent 90%, #6d72f3 10%);
+	margin-bottom: .3rem;
+	padding: 1rem;
+	transition: 5s linear;
+}
+
+.container li:hover {
+	background-size: 3000%;
+	cursor: pointer;
+}
+
+.container li a {
+	display: block;
+	text-decoration: none;
+	color: #333;
+	margin-left: 2rem;
+}
+
+.container p {
+	margin: 1rem;
+}
+
+footer {
+	background-color: #333;
+	color: whitesmoke;
+	text-align: center;
+	font-size: calc(1vh + .5rem);
+	width: 100vw;
+	margin: calc(-50vw + 50%);
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+}

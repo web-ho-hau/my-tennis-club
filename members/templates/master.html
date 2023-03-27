@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Juli&atilde;o Martins">
+	<meta name="description" content="Learn Django to become a fullstack web developer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+</head>
+<body>
+
+	{% block content %}{% endblock %}
+	
+	{% with firstname="Juli&atilde;o" lastname="Martins" %}
+	{% include 'footer.html' %}
+	{% endwith %}
+</body>
+</html>
